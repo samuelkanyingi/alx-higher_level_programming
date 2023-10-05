@@ -6,6 +6,6 @@ if __name__ == "__main__":
     if not args:
         print("0 arguments.")
     else:
-        print(f"argument{'s' if len(args) > 1 else ''}: {len(args)}")
+        print(f"{len(args)}  argument{'s' if len(args) > 1 else ''}:")
         for i, arg in enumerate(args, start=1):
             print(f"{i} : {arg}")
