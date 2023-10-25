@@ -1,6 +1,9 @@
 #!/usr/bin/python3
+"""Defines class square"""
+
+
 class Square:
-    """Defines class"""
+    """Defines class square properties"""
     def __init__(self, size=0):
         """size: size of square(default = 0)
         __size:private size of square
