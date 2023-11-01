@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 """rectangle class"""
+
+
 class Rectangle:
-    """show a rrctangle"""
+    """show a rectangle"""
     pass
