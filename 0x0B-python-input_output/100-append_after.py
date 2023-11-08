@@ -9,11 +9,11 @@ def append_after(filename="", search_string="", new_string=""):
         search_string: string to loook for in each line
         new_string: appended lin eof text
     """
-    with open(filename, 'r') as file:
-        line_s = file.readlines()
+    with open(filename, 'r') as a_file:
+        line_s = a_file.readlines()
 
-    with open(filename, 'w') as file:
+    with open(filename, 'w') as a_file:
         for lin in line_s:
-            file.write(lin)
+            a_file.write(lin)
             if search_string in lin:
-                file.write(new_string)
+                a_file.write(new_string)
