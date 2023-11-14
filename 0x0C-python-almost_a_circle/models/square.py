@@ -1,7 +1,9 @@
 #!/usr/bin/python3
 from models.rectangle import Rectangle
 
+
 class Square(Rectangle):
+
     """Class Square inherits from Rectangle"""
     def __init__(self, size, x=0, y=0, id=None):
         """intializee square"""
@@ -29,7 +31,10 @@ class Square(Rectangle):
                 setattr(self, key, value)
 
     def to_dictionary(self):
-        return {'id': self.id,'width': self.width,'height': self.height,'x': self.x,'y': self.y}
+        return {'id': self.id, 'width': self.width,
+                'height': self.height, 'x': self.x, 'y': self.y}
+
     def __str__(self):
-         """String representation of Square"""
-         return "[Square] ({}) {}/{} - {}".format(self.id, self.x, self.y, self.width)
+        """String representation of Square"""
+        return "[Square] ({}) {}/{} - {}".format(
+                self.id, self.x, self.y, self.width)

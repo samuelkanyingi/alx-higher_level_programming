@@ -1,10 +1,12 @@
 #!/usr/bin/python3
 """define class base"""
-
 import json
+
+
 class Base:
     """implement id attribite"""
     __nb_objects = 0
+
     def __init__(self, id=None):
         """initialize base instance"""
         if id is not None:
