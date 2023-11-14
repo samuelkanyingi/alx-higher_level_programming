@@ -6,7 +6,16 @@ from models.base import Base
 class Rectangle(Base):
     """rectangle inherits base"""
     def __init__(self, width, height, x=0, y=0, id=None):
-        """initialize rectangle"""
+        """initialize rectangle
+         Args:
+            width (int): The width of the rectangle
+            height (int): The height of the rectangle
+            x (int): The x-coordinate
+            y (int): The y-coordinate
+            id (int): The identifier of the rectangle
+            Returns:
+                   None
+        """
         super().__init__(id)
         self.__width = width
         self.__height = height
