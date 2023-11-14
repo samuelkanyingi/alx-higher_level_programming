@@ -21,7 +21,7 @@ class Rectangle(Base):
     @width.setter
     def width(self, value):
         """width setter"""
-        if not  isinstance(value, int):
+        if not isinstance(value, int):
             raise TypeError("width must be an integer")
         elif value <= 0:
             raise ValueError("width must be > 0")
@@ -72,7 +72,7 @@ class Rectangle(Base):
     def area(self):
         """Calculate area"""
         return self.__width * self.__height
-    
+
     def display(self):
         """print rectangle with #"""
         r = 0
@@ -85,11 +85,14 @@ class Rectangle(Base):
             r += 1
 
     def to_dictionary(self):
-        return {'id': self.id,'width': self.width,'height': self.height,'x': self.x,'y': self.y}
+        return {'id': self.id,
+                'width': self.width,
+                'height': self.height, 'x': self.x, 'y': self.y}
 
     def __str__(self):
         """override str method"""
-        return "[Rectangle] ({}) {}/{} - {}/{}".format(self.id, self.__x, self.__y, self.__width, self.__height)
+        return "[Rectangle] ({}) {}/{} - {}/{}".format(
+                self.id, self.__x, self.__y, self.__width, self.__height)
 
     def update(self, *args, **kwargs):
         """"update attribute"""
