@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """define class base"""
 import json
-
+import turtle
 
 class Base:
     """implement id attribite"""
@@ -66,3 +66,32 @@ class Base:
                 return instances
         except FileNotFoundError:
             return []
+
+    @staticmethod
+    def draw(list_rectangles, list_squares):
+        s = turtle.Screen()
+        p = turtle.Turtle()
+
+        p.speed(2)
+
+        for x in list_rectangles:
+            pen.penup()
+            pen.goto(rect.x, rect.y)
+            pen.pendown()
+            pen.forward(rect.width)
+            pen.left(90)
+            pen.forward(rect.height)
+            pen.left(90)
+            pen.forward(rect.width)
+            pen.left(90)
+            pen.forward(rect.height)
+            pen.left(90)
+
+        for i in list_squares:
+            pen.up()
+            pen.goto(rect.x, rect.y)
+            pendown()
+            for i in range(4):
+                pen.forward(i.size)
+                pen.left(90)
+        s.onexitclick()
