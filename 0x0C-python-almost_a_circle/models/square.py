@@ -10,7 +10,7 @@ class Square(Rectangle):
         super().__init__(size, size, x, y, id)
         self.size = size
         self.x = x
-        slf.y = y
+        self.y = y
 
     def __str__(self):
         """human readable string representation"""
