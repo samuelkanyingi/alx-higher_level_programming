@@ -82,8 +82,7 @@ class Rectangle(Base):
 
     def __str__(self):
         """human-readable string representation"""
-        return f"[Rectangle]
-    ({self.id}) {self.x}/{self.y} - {self.width}/{self.height}"
+        return f"[Rectangle] ({self.id}) {self.x}/{self.y} - {self.width}/{self.height}"
 
     def update(self, *args, **kwargs):
         """method that updates *args and *kwargs"""
