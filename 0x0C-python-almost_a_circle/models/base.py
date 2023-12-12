@@ -15,6 +15,7 @@ class Base:
             Base.__nb_objects += 1
             self.id = Base.__nb_objects
 
+    @staticmethod
     def to_json_string(list_dictionaries):
         """method that returns the JSON string representation"""
         if list_dictionaries is None or len(list_dictionaries) == 0:
@@ -46,7 +47,7 @@ class Base:
     def create(cls, **dictionary):
         """method that returns an instance with all attributes already set"""
         if cls.__name__ == 'Rectangle':
-            _inst = cls(1, 1)
+            dummy_inst = cls(1, 1)
         elif cls.__name__ == 'Square':
             dummy_inst = cls(1)
         else:
