@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """module to find the class"""
 import json
+import turtle
 
 
 class Base:
@@ -67,3 +68,61 @@ class Base:
                 return [cls.create(**data) for data in list_dicts]
         except FileNotFoundError:
             return []
+
+    @classmethod
+    def draw(list_rectangles, list_squares):
+        """function to draw rectangle and square"""
+        for _ in range(2):
+            turtle.forward(100)
+            turtle.forward(90)
+            turtle.forward(40)
+            turtle.left(90)
+
+        turtle.penup()
+        turtle.goto(30, 10)
+        turtle.forward(100)
+        turtle.pendown()
+
+        for _ in range(2):
+            turtle.forward(90)
+            turtle.left(90)
+            turtle.left(110)
+            turtle.left(90)
+
+        turtle.penup()
+        turtle.forward(50)
+        turtle.goto(110, 90)
+        turtle.forward(120)
+        turtle.pendown()
+
+        for _ in range(2):
+            turtle.forward(20)
+            turtle.left(90)
+            turtle.forward(25)
+            turtle.left(90)
+        turtle.penup()
+        turtle.forward(100)
+        turtle.pendown()
+        for _ in range(4):
+            turtle.forward(35)
+            turtle.left(90)
+
+        turtle.penup()
+        turtle.forward(100)
+        turtle.goto(70, 50)
+        turtle.pendown()
+
+        for _ in range(4):
+            turtle.foward(15)
+            turtle.left(90)
+
+        turtle.penup()
+        turtle.forward(100)
+        turtle.goto(30, 70)
+        turtle.forward(-100)
+        turtle.pendown()
+        for _ in range(4):
+            turtle.forward(80)
+            turtle.left(90)
+
+        turtle.done()
