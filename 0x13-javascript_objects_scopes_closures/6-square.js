@@ -1,4 +1,4 @@
-#!usr/bin/node
+#!/usr/bin/node
 const Rectangle = require('./5-square');
 
 class Square extends Rectangle {
