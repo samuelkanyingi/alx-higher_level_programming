@@ -36,3 +36,18 @@ To create a Python Virtual Environment, allowing you to install specific depende
 
 Once activated, you can install project-specific dependencies within this virtual environment without affecting your system-wide Python installation.
 
+###Install MySQLdb module version 2.0.x
+
+For installing MySQLdb, you need to have MySQL installed: How to install MySQL 8.0 in Ubuntu 20.04
+
+```bash
+$ sudo apt-get install python3-dev
+$ sudo apt-get install libmysqlclient-dev
+$ sudo apt-get install zlib1g-dev
+$ sudo pip3 install mysqlclient
+...
+$ python3
+>>> import MySQLdb
+>>> MySQLdb.version_info 
+(2, 0, 3, 'final', 0)
+```
