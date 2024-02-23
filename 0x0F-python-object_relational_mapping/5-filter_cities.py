@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""
+A script that list all cities by state
+"""
 import MySQLdb
 from sys import argv
 
@@ -13,6 +16,7 @@ if __name__ == "__main__":
     state_name = argv[4]
     cur.execute(sql_query, (state_name,))
     cities = cur.fetchall()
+
     print(", ".join(city[0] for city in cities))
     cur.close()
     db.close()
