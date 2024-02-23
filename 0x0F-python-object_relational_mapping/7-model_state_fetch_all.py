@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""
+script that lists all State  via SQLAlchemy
+"""
 import sqlalchemy
 from sys import argv
 from sqlalchemy import create_engine
