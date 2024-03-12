@@ -3,6 +3,7 @@
 
 if __name__ == "__main__":
     import urllib.request
+    import urllib.parse
     import sys
 
     url = sys.argv[1]
@@ -12,4 +13,4 @@ if __name__ == "__main__":
 
     with urllib.request.urlopen(url, data=data) as response:
          body = response.read().decode('utf-8')
-        print(body)
+         print(body)
