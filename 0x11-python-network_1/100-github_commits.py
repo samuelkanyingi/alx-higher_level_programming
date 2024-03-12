@@ -17,10 +17,10 @@ if __name__ == '__main__':
     if response.status_code == 200:
         commits = response.json()
 
-    # Print the list of commits
-    for commit in commits[:10]:
-        sha = commit['sha']
-        author_name = commit['commit']['author']['name']
-        print(f"{sha}: {author_name}")
+        # Print the list of commits
+        for commit in commits[:10]:
+            sha = commit['sha']
+            author_name = commit['commit']['author']['name']
+            print(f"{sha}: {author_name}")
     else:
         print("Failed to retrieve commits. Status code:", response.status_code)
