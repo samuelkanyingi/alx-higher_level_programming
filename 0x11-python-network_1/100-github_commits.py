@@ -15,7 +15,6 @@ if __name__ == '__main__':
 
     # Check if the request was successful
     if response.status_code == 200:
-    # Extract the list of commits from the response JSON
         commits = response.json()
 
     # Print the list of commits
