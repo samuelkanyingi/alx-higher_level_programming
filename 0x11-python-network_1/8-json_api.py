@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 ''' Python script that display the id and name JSON format'''
-if __name__ = '__main__':
+if __name__ == '__main__':
     import requests
     import sys
 
