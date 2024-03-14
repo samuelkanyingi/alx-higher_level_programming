@@ -24,7 +24,7 @@ if __name__ == '__main__':
     Session = sessionmaker(bind=engine)
     session = Session()
 
-    # Query the database to get all State objects with a name containing the letter 'a'
+    # Query the database to get all State objects with a name
     states = session.query(State).filter(State.name.like('%a%')).all()
 
     # Delete the State objects
