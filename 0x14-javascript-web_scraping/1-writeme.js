@@ -6,6 +6,5 @@ fs.writeFile(path, content, (err) => {
   if (err) {
     console.error('error found');
   }
-  console.log('done writing');
 }
 );
