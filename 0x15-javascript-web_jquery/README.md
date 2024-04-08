@@ -13,3 +13,11 @@
 * How to make a GET request with JQuery Ajax
 * How to make a POST request with JQuery Ajax
 * How to listen/bind to DOM events
+
+## More Info
+# Import JQuery
+```
+<head>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+</head>
+```
