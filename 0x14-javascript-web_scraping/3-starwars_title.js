@@ -14,6 +14,6 @@ request(url, function (error, response, body) {
     console.error('Status Code:', response.statusCode);
   } else {
     const movieData = JSON.parse(body);
-    console.log('Title:', movieData.title);
+    console.log(movieData.title);
   }
 });
